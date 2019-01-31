@@ -24,10 +24,14 @@
 
 ## Estrutura Cron
 
-\* \* \* \* \* \*
-| | | | | |_ dia da semana
-| | | | |_ mês
-| | | |_ dia do mês
-| | |_ hora
-| |_ minutos
-|_ segundos
+```
+ # ┌────────────── segundos
+ # │ ┌──────────── minutos
+ # │ │ ┌────────── horas
+ # │ │ │ ┌──────── dia do mês
+ # │ │ │ │ ┌────── mês
+ # │ │ │ │ │ ┌──── dia da semana
+ # │ │ │ │ │ │
+ # │ │ │ │ │ │
+ # * * * * * *
+```
